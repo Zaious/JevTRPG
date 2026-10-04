@@ -11,7 +11,8 @@
 /* 站台常數：頁尾、隱私頁、聯絡信箱全部從這裡取，不在各頁手抄。
  * ⚠ contact 這個信箱要在 Cloudflare Email Routing 建規則才收得到信。 */
 window.SITE = { contact: "jevtrpg@chroniclecore.com", studioUrl: "https://studio.chroniclecore.com",
-               support: "https://portaly.cc/chroniclecore/support" };
+               support: "https://portaly.cc/chroniclecore/support",
+               repo: "https://github.com/Zaious/JevTRPG" };
 
 window.I18N = {
   "zh-Hant": {
@@ -57,7 +58,7 @@ window.I18N = {
     studioLine: "編年史記工作室 ChronicleCore Studio 出品",
     studioBy: "作者：Zaious",
     footLinkPrivacy: "關於與隱私",
-    footSupport: "支持作者", pvSupportH: "支持作者",
+    footSupport: "支持作者", footSource: "原始碼（MIT）", pvSupportH: "支持作者",
     pvSupport: "如果這個工具讓你玩得開心，歡迎到 <a href='{support}' target='_blank' rel='noopener noreferrer'>Portaly 贊助頁</a>請作者喝一杯。付款在站外完成，本站不經手款項，也不知道誰贊助了。<br>贊助<strong>不會</strong>增加或解鎖任何功能，站上所有功能對所有人都一樣，這是純粹的支持，不是購買。",
     footContact: "聯絡：{mail}",
     docTitlePrivacy: "關於與隱私｜JevTRPG",
@@ -65,7 +66,7 @@ window.I18N = {
     pvTitle: "關於與隱私",
     pvUpdated: "最後更新：2026-09-30",
     pvAboutH: "關於本站",
-    pvAbout: "JevTRPG 由<a href='{studio}' target='_blank' rel='noopener'>編年史記工作室 ChronicleCore Studio</a> 開發與維護，作者 Zaious。它把你貼上的履歷（或角色背景）交給 TypeSafe 的判斷模型 Jev 判讀，印成一張 d100 跑團風格的調查員檔案。這是以 Jev 為發想做出來的應用，是遊戲，不是能力評估。本站是非官方作品，與 TypeSafe、Chaosium 沒有合作關係，也不是任何遊戲的官方或相容產品。<br>問題回報或聯絡作者：{mail}",
+    pvAbout: "JevTRPG 由<a href='{studio}' target='_blank' rel='noopener'>編年史記工作室 ChronicleCore Studio</a> 開發與維護，作者 Zaious。它把你貼上的履歷（或角色背景）交給 TypeSafe 的判斷模型 Jev 判讀，印成一張 d100 跑團風格的調查員檔案。這是以 Jev 為發想做出來的應用，是遊戲，不是能力評估。本站是非官方作品，與 TypeSafe、Chaosium 沒有合作關係，也不是任何遊戲的官方或相容產品。<br>程式碼以 MIT 授權公開在 <a href='{repo}' target='_blank' rel='noopener'>GitHub</a>，「履歷不儲存」這件事你可以直接檢查原始碼。<br>問題回報或聯絡作者：{mail}",
     pvFreeH: "這個網站怎麼維持免費",
     pvFree: "每一次判讀，本站都要付費呼叫 Jev API。網站免費給大家用，這些費用主要靠頁面上的廣告收入支付。為了避免被程式大量呼叫，單次內容有 12,000 字元的上限、每個 IP 每小時與全站每天各有使用次數上限（全站每天的計數在台北時間午夜重置），送出前也會用機器人驗證確認是真人。",
     pvTextH: "你貼上的文字",
@@ -205,7 +206,7 @@ window.I18N = {
     studioLine: "編年史記工作室 ChronicleCore Studio 制作",
     studioBy: "作者：Zaious",
     footLinkPrivacy: "運営者情報とプライバシー",
-    footSupport: "作者を応援", pvSupportH: "作者を応援",
+    footSupport: "作者を応援", footSource: "ソースコード（MIT）", pvSupportH: "作者を応援",
     pvSupport: "このツールで楽しめたら、<a href='{support}' target='_blank' rel='noopener noreferrer'>Portaly の支援ページ</a>から作者にコーヒーをごちそうしてもらえると嬉しいです。お支払いはサイトの外で完結し、当サイトは金銭を扱わず、誰が支援したかも知りません。<br>支援によって機能が増えたり解放されたりすることは<strong>ありません</strong>。すべての機能は誰に対しても同じで、これは購入ではなく純粋な応援です。",
     footContact: "連絡先：{mail}",
     docTitlePrivacy: "運営者情報とプライバシー｜JevTRPG",
@@ -213,7 +214,7 @@ window.I18N = {
     pvTitle: "運営者情報とプライバシー",
     pvUpdated: "最終更新：2026-09-30",
     pvAboutH: "このサイトについて",
-    pvAbout: "JevTRPG は<a href='{studio}' target='_blank' rel='noopener'>編年史記工作室 ChronicleCore Studio</a>が開発・運営しています。作者は Zaious。貼り付けた履歴書（またはキャラクターの背景）を TypeSafe の判定モデル Jev に読ませ、d100 系 TRPG 風の探索者シートとして印刷します。Jev から発想して作ったアプリで、ゲームであり、能力評価ではありません。非公式の作品で、TypeSafe・Chaosium とは関係がなく、いかなるゲームの公式・互換製品でもありません。<br>不具合の報告・連絡先：{mail}",
+    pvAbout: "JevTRPG は<a href='{studio}' target='_blank' rel='noopener'>編年史記工作室 ChronicleCore Studio</a>が開発・運営しています。作者は Zaious。貼り付けた履歴書（またはキャラクターの背景）を TypeSafe の判定モデル Jev に読ませ、d100 系 TRPG 風の探索者シートとして印刷します。Jev から発想して作ったアプリで、ゲームであり、能力評価ではありません。非公式の作品で、TypeSafe・Chaosium とは関係がなく、いかなるゲームの公式・互換製品でもありません。<br>ソースコードは MIT ライセンスで <a href='{repo}' target='_blank' rel='noopener'>GitHub</a> に公開しています。「履歴書を保存しない」という点は、ソースコードで確かめられます。<br>不具合の報告・連絡先：{mail}",
     pvFreeH: "無料で運営できる理由",
     pvFree: "判定のたびに、このサイトは Jev API に料金を支払っています。無料で使っていただくために、その費用は主にページ上の広告収入でまかなっています。プログラムによる大量アクセスを防ぐため、一回に送れる内容は 12,000 文字まで、IP アドレスごとの 1 時間あたりの回数とサイト全体の 1 日あたりの回数にも上限があり（サイト全体の 1 日分は台北時間の深夜 0 時にリセットされます）、送信前に人間かどうかのボット確認も行います。",
     pvTextH: "貼り付けたテキスト",
@@ -353,7 +354,7 @@ window.I18N = {
     studioLine: "A ChronicleCore Studio production (編年史記工作室)",
     studioBy: "By Zaious",
     footLinkPrivacy: "About and privacy",
-    footSupport: "Support the author", pvSupportH: "Support the author",
+    footSupport: "Support the author", footSource: "Source code (MIT)", pvSupportH: "Support the author",
     pvSupport: "If this tool gave you a good time, you can buy the author a coffee on <a href='{support}' target='_blank' rel='noopener noreferrer'>Portaly</a>. Payment happens off-site, so this site never handles money and does not know who supported it.<br>Supporting does <strong>not</strong> add or unlock anything: every feature is the same for everyone. It is a plain thank-you, not a purchase.",
     footContact: "Contact: {mail}",
     docTitlePrivacy: "About and privacy | JevTRPG",
@@ -361,7 +362,7 @@ window.I18N = {
     pvTitle: "About and privacy",
     pvUpdated: "Last updated: 2026-09-30",
     pvAboutH: "About this site",
-    pvAbout: "JevTRPG is built and run by <a href='{studio}' target='_blank' rel='noopener'>ChronicleCore Studio</a> (編年史記工作室), by Zaious. It hands the résumé (or character backstory) you paste to TypeSafe's decision model Jev and prints the result as a d100-style investigator's dossier. It is an application built around Jev, and it is a game, not an assessment. It is an unofficial work, not affiliated with TypeSafe or Chaosium, and not an official or compatible product for any game.<br>Bug reports and contact: {mail}",
+    pvAbout: "JevTRPG is built and run by <a href='{studio}' target='_blank' rel='noopener'>ChronicleCore Studio</a> (編年史記工作室), by Zaious. It hands the résumé (or character backstory) you paste to TypeSafe's decision model Jev and prints the result as a d100-style investigator's dossier. It is an application built around Jev, and it is a game, not an assessment. It is an unofficial work, not affiliated with TypeSafe or Chaosium, and not an official or compatible product for any game.<br>The source code is public on <a href='{repo}' target='_blank' rel='noopener'>GitHub</a> under the MIT License, so you can check for yourself that your résumé isn't stored.<br>Bug reports and contact: {mail}",
     pvFreeH: "How the site stays free",
     pvFree: "Every judgment costs the site a paid call to the Jev API. The site is free to use, and those costs are paid mostly by the ads on the page. To keep scripts from hammering it, one submission is capped at 12,000 characters, there are limits on uses per IP address per hour and for the whole site per day (the daily count resets at midnight Taipei time), and a bot check confirms you are a person before anything is sent.",
     pvTextH: "The text you paste",

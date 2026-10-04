@@ -178,7 +178,7 @@ PostHog 專案金鑰、Turnstile site key），不記訪客、不寫任何東西
   HTML 裡的靜態繁中要跟它一致——`sync-static.mjs --check`（`test.mjs` 會跑）擋住漂移；
   隱私頁內文靜態寫進 HTML 是因為 AdSense 的爬蟲不一定執行 JS。
   ⚠ 聲明必須跟實際一致：**改了任何一項（換掉 PostHog、加了記錄）就要同步改隱私頁。**
-  倉庫轉為公開的那天，要把「程式碼公開（MIT）」補進隱私頁與頁尾。
+  程式碼公開（MIT）的說法已在頁尾（「原始碼」連結）與隱私頁；網址只定義在 `window.SITE.repo`，`sync-static --check` 擋漂移。
 
 ## 兩份實作，一份真相
 

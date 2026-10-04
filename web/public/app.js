@@ -39,9 +39,9 @@ const T = (key, vars) => {
   if (s == null) return "";
   if (vars) for (const [k, v] of Object.entries(vars)) s = s.split(`{${k}}`).join(v);
   // 站台常數與跨鍵引用：信箱、工作室網址只在 window.SITE 定義一處，聲明文字裡用 {mail} {studio}
-  return s.replace(/\{(mail|studio|support|adsSettings|partnerSites)\}/g, (_, k) =>
+  return s.replace(/\{(mail|studio|support|repo|adsSettings|partnerSites)\}/g, (_, k) =>
     k === "mail" ? window.SITE.contact : k === "studio" ? window.SITE.studioUrl
-    : k === "support" ? window.SITE.support : T(k));
+    : k === "support" ? window.SITE.support : k === "repo" ? window.SITE.repo : T(k));
 };
 
 function applyLang() {

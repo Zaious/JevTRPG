@@ -203,7 +203,7 @@ const FULL = { turnstileSiteKey: "0xTESTKEY", ads: { client: "ca-pub-TEST", slot
     const mail = await page.$eval("#pv-body", (e) => e.textContent.includes("jevtrpg@chroniclecore.com"));
     ok(`C 隱私頁 ${lang}：標題、十節、信箱`, got === h1 && secs === 10 && mail, got);
   }
-  ok("C 頁尾連回隱私頁、工作室連結", await page.$eval("footer", (f) => !!f.querySelector('a[href="privacy"]') && !!f.querySelector('a[href="https://studio.chroniclecore.com"]')));
+  ok("C 頁尾連回隱私頁、工作室連結、原始碼連結", await page.$eval("footer", (f) => !!f.querySelector('a[href="privacy"]') && !!f.querySelector('a[href="https://studio.chroniclecore.com"]') && !!f.querySelector('a[href="https://github.com/Zaious/JevTRPG"]')));
   if (OUT) await page.screenshot({ path: OUT + "/10-privacy-en.png", fullPage: true });
   await page.close();
 }

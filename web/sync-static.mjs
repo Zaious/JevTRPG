@@ -32,9 +32,9 @@ function makeT({ I18N, SITE }) {
   const T = (key) => {
     const s = I18N["zh-Hant"][key];
     if (s == null) throw new Error(`i18n 缺 zh-Hant.${key}`);
-    return s.replace(/\{(mail|studio|support|adsSettings|partnerSites)\}/g, (_, k) =>
+    return s.replace(/\{(mail|studio|support|repo|adsSettings|partnerSites)\}/g, (_, k) =>
       k === "mail" ? SITE.contact : k === "studio" ? SITE.studioUrl
-        : k === "support" ? SITE.support : T(k));
+        : k === "support" ? SITE.support : k === "repo" ? SITE.repo : T(k));
   };
   return T;
 }
@@ -80,6 +80,8 @@ export function check(data = loadI18n()) {
         if (m[0] !== data.SITE.support) problems.push(`${f}: 贊助網址 ${m[0]} ≠ SITE.support`);
       for (const m of html.matchAll(/https:\/\/studio\.[\w.]+/g))
         if (m[0] !== data.SITE.studioUrl) problems.push(`${f}: 工作室網址 ${m[0]} ≠ SITE.studioUrl`);
+      for (const m of html.matchAll(/https:\/\/github\.com\/Zaious\/JevTRPG/g))
+        if (m[0] !== data.SITE.repo) problems.push(`${f}: 原始碼網址 ${m[0]} ≠ SITE.repo`);
     }
   }
   return problems;
