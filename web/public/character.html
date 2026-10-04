@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用 Jev 檢查角色技能：KP 審核單｜JevTRPG</title>
+<meta name="description" content="貼上角色背景，讓 TypeSafe 的判斷模型 Jev 判斷哪些技能有背景支撐、哪些是 KP 該問的，並算點數有沒有超支。COC／d100 跑團用。">
+<meta property="og:title" content="用 Jev 看你的背景故事撐不撐得起這張技能表">
+<meta property="og:description" content="KP 檢查角色卡用的工具：哪幾項沒有背景支撐、點數有沒有超支。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141a17">
+<link rel="canonical" href="https://jevtrpg.chroniclecore.com/character">
+<meta property="og:url" content="https://jevtrpg.chroniclecore.com/character">
+<meta property="og:site_name" content="JevTRPG">
+<meta property="og:image" content="https://jevtrpg.chroniclecore.com/og.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JevTRPG：把履歷變成一張 1920 年代調查員角色卡 | résumé to investigator sheet | 履歴書から探索者シート">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="用 Jev 檢查角色技能：KP 審核單｜JevTRPG">
+<meta name="twitter:description" content="貼上角色背景，讓 TypeSafe 的判斷模型 Jev 判斷哪些技能有背景支撐、哪些是 KP 該問的，並算點數有沒有超支。COC／d100 跑團用。">
+<meta name="twitter:image" content="https://jevtrpg.chroniclecore.com/og.png?v=3">
+<link rel="alternate" hreflang="zh-Hant" href="character">
+<link rel="alternate" hreflang="ja" href="character?lang=ja">
+<link rel="alternate" hreflang="en" href="character?lang=en">
+<link rel="alternate" hreflang="x-default" href="character">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%23141a17%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 fill=%22%23e8ddc0%22%3Ed%25%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+  <a class="brand" href="./"><span class="brand-jev" data-i18n="brand">Jev</span><span class="brand-sheet" data-i18n="brandAccent">TRPG</span></a>
+  <nav class="tabs">
+    <a href="./" data-i18n="navResume">履歷變角色卡</a>
+    <a href="character" aria-current="page" data-i18n="navCharacter">角色技能檢查</a>
+  </nav>
+  <div class="langs" id="langs"></div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1 data-i18n="charHeroTitle">幫角色配技能，或讓 KP 檢查技能表</h1>
+      <p class="hero-sub" data-i18n="charHeroSub">只貼背景故事，它照點數上限配一份技能表；連填好的技能一起貼，它逐項標出背景撐不起的地方。</p>
+      <p class="hero-alt"><a href="./" data-i18n="altToResume">只有履歷？把履歷變成一張調查員角色卡 →</a></p>
+    </div>
+
+    <!-- 首屏縮圖：範例角色實際跑出來的審核單（samples/*.json），點下去看全尺寸 -->
+    <figure class="preview">
+      <img class="tentacle t-a" src="art/tentacle-a.svg" alt="" width="449" height="336">
+      <a class="preview-frame" id="preview-open" href="#out" aria-labelledby="preview-cap">
+        <div class="preview-sheet" id="preview-sheet" aria-hidden="true"></div>
+      </a>
+      <figcaption id="preview-cap"><span data-i18n="charPreviewCaption">範例角色實際跑出來的審核單。</span>
+        <span class="preview-more" data-i18n="previewOpen">看完整一張</span></figcaption>
+    </figure>
+
+    <div class="intake paper">
+      <label class="intake-label" for="text" data-i18n="charInputLabel">角色卡全文</label>
+      <textarea id="text" spellcheck="false" data-i18n-placeholder="charPlaceholder"></textarea>
+      <div class="addskill">
+        <label for="as-name" data-i18n="asLabel">加一項技能</label>
+        <input id="as-name" list="as-list" autocomplete="off" data-i18n-placeholder="asNamePh">
+        <datalist id="as-list"></datalist>
+        <input id="as-val" class="typed" type="number" min="0" max="99" inputmode="numeric" data-i18n-placeholder="asValPh">
+        <button id="as-add" class="btn-text" type="button" data-i18n="asAdd">加入</button>
+        <span class="as-msg" id="as-msg" role="status"></span>
+      </div>
+      <div class="intake-row">
+        <button id="go" class="btn-stamp" type="button" data-i18n="charGo">檢查／配點</button>
+        <button id="sample" class="btn-text" type="button" data-i18n="charSample">放一份範例角色</button>
+        <span class="count typed" id="count"></span>
+      </div>
+      <div class="bonus">
+        <label for="bonus" data-i18n="charBonus">房規額外技能點</label>
+        <input type="number" id="bonus" class="typed" value="0" min="0" max="500" step="10" inputmode="numeric">
+      </div>
+      <div id="turnstile-slot"></div>
+      <p class="ts-msg" id="ts-msg" role="alert" hidden></p>
+    </div>
+
+    <details class="privacy">
+      <summary><span data-i18n="privacyShort">履歷不儲存，送出前先拔掉信箱、電話、身分證、地址與生日。</span>
+        <span class="more" data-i18n="privacyMore">送去哪裡？</span></summary>
+      <p data-i18n="privacyBody">判讀交給 TypeSafe 的 Jev API，所以文字會離開你的瀏覽器：在一次請求裡走一趟就丟掉，不寫進任何地方。不想送的段落請先自己刪掉。</p>
+    </details>
+  </section>
+
+  <section id="out" aria-live="polite"></section>
+  <div id="ad-results"></div>
+
+  <section class="memos memos--three">
+    <article class="memo paper memo--flags">
+      <h2 data-i18n="flagsTitle">卡上的紅筆是什麼意思</h2>
+      <p data-i18n-html="flagsBody"><span class='mk mk-ring'>65</span> <strong>背景撐不起</strong>：模型很確定文件裡找不到相關痕跡，這是 KP 該問的。<br><span class='mk mk-dash'>70</span> <strong>有兩種讀法</strong>：機率分成兩個峰，這條本來就有爭議，兩種讀法都印出來，讓 KP 自己裁。<br><span class='mk mk-line'>70</span> <strong>邊緣</strong>：超過背景撐得起的值，但差不到 10 點。<br>點數帳是程式算的，跟模型無關。</p>
+    </article>
+    <article class="memo paper">
+      <h2 data-i18n="capTitle">這頁為什麼套點數上限</h2>
+      <p data-i18n="charNote">兩頁用同一個引擎，差別只有一個：這頁套點數上限。履歷版不套，那張卡看的是「這份履歷有多強」；角色要拿去跑團，點數上限本身就是 KP 要檢查的東西。房規給額外點數的話，填在上面。</p>
+    </article>
+    <article class="memo paper">
+      <h2 data-i18n="jevTitle">關於 Jev</h2>
+      <p data-i18n-html="jevBody">這個站是<strong>以 Jev 為發想做出來的應用</strong>。Jev 是 TypeSafe 的「System One」判斷模型：它不寫文章、不解釋理由，只回答你事先定義好的選擇題、評分題與是非題，並附上一個校準過的機率。這裡每一項技能都是一題五級的評分題。一份履歷約 47 題一次問完，不到一秒。</p>
+      <p class="memo-links">
+        <a href="https://typesafe.ai" rel="noopener" data-i18n="linkTypesafe">TypeSafe Jev 官方</a>
+        <a href="https://github.com/Zaious/jev-capability-atlas" rel="noopener" data-i18n="linkAtlas">Jev 能力地圖：它在哪裡站得住、在哪裡站不住</a>
+      </p>
+    </article>
+    <p class="lang-note" id="content-lang-note" hidden></p>
+  </section>
+  <div id="ad-footer"></div>
+</main>
+
+<footer class="foot">
+  <nav class="foot-links" aria-label="Footer">
+    <a href="privacy" data-i18n="footLinkPrivacy">關於與隱私</a>
+    <a href="https://portaly.cc/chroniclecore/support" target="_blank" rel="noopener noreferrer" data-i18n="footSupport">支持作者</a>
+    <span data-i18n="footContact">聯絡：jevtrpg@chroniclecore.com</span>
+  </nav>
+  <p data-i18n="footCopy">© 2026 編年史記工作室 ChronicleCore. All rights reserved.</p>
+  <p data-i18n="footerLegal">非官方、非商業授權作品。技能名稱為 d100 系遊戲的通用術語，所有描述文字均為原創，與 Chaosium 無關，亦非任何遊戲的官方或相容產品。判讀使用 TypeSafe 的 Jev API，但本站是獨立應用，不是 TypeSafe 的產品。判讀由 AI 完成，可能出錯；這是遊戲，不是能力評估。</p>
+  <p class="foot-studio"><a href="https://studio.chroniclecore.com" target="_blank" rel="noopener" data-i18n="studioLine">編年史記工作室 ChronicleCore Studio 出品</a><span data-i18n="studioBy">作者：Zaious</span></p>
+</footer>
+
+<script>window.PAGE = "character";</script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

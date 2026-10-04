@@ -1,0 +1,26 @@
+JevTRPG: third-party licences
+
+JevTRPG itself is MIT licensed (see LICENSE). The following are shipped inside this
+repository (web/public/vendor/). Their licence files are kept next to them.
+
+1. pdf.js 6.3.289 (npm: pdfjs-dist), Apache License 2.0
+   https://github.com/mozilla/pdf.js
+   Files: web/public/vendor/pdfjs/pdf.min.mjs, pdf.worker.min.mjs
+   Licence text: web/public/vendor/pdfjs/LICENSE
+   Character maps: web/public/vendor/pdfjs/cmaps/ (licence: web/public/vendor/pdfjs/cmaps/LICENSE)
+   Loaded only when a visitor drops a PDF onto the page; the file is read in the browser and never uploaded.
+
+2. html-to-image 1.11.13, MIT License
+   https://github.com/bubkoo/html-to-image
+   File: web/public/vendor/html-to-image.js
+   Licence text: web/public/vendor/LICENSE-html-to-image.txt
+   Used to turn the finished character sheet into a JPEG in the browser.
+
+Not bundled, loaded by the visitor's browser at run time:
+
+3. Google Fonts (IM Fell English, IM Fell English SC, Noto Serif TC, Noto Serif JP, Courier Prime),
+   all under the SIL Open Font License 1.1. The page requests them from Google Fonts, so Google
+   receives the visitor's IP address and the font request (the privacy page says so).
+
+Development-only tools (not distributed with the site): wrangler (Cloudflare, MIT or Apache-2.0)
+and puppeteer-core (Apache-2.0), see web/worker/package.json.

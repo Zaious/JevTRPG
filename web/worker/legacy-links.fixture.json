@@ -1,0 +1,1071 @@
+{
+ "fps": {
+  "zh-Hant": 50259,
+  "en": 48800,
+  "ja": 45943
+ },
+ "links": [
+  {
+   "loc": "zh-Hant",
+   "name": "",
+   "link": "AQDEUwY4PT1MTClCVh-VVQEPDkIFEgIBAwYFBA4jGAN5AEMXOEVDXkwjmgGKAXRCdHImdJ4BbHB8",
+   "card": {
+    "n": "",
+    "o": {
+     "1920": "工程師",
+     "modern": "顧問"
+    },
+    "c": {
+     "APP": 55,
+     "CON": 60,
+     "DEX": 60,
+     "INT": 75,
+     "LUCK": 40,
+     "POW": 65,
+     "SIZ": 85,
+     "STR": 30,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 14,
+     "MP": 13,
+     "SAN": 65
+    },
+    "s": [
+     [
+      "估價",
+      11,
+      1
+     ],
+     [
+      "信用評級",
+      28,
+      0
+     ],
+     [
+      "偵查",
+      34,
+      1
+     ],
+     [
+      "圖書館使用",
+      33,
+      1
+     ],
+     [
+      "外語",
+      47,
+      0
+     ],
+     [
+      "心理學",
+      38,
+      0
+     ],
+     [
+      "攝影",
+      17,
+      1
+     ],
+     [
+      "教學",
+      77,
+      0
+     ],
+     [
+      "母語",
+      69,
+      0
+     ],
+     [
+      "法律",
+      58,
+      0
+     ],
+     [
+      "科學",
+      33,
+      0
+     ],
+     [
+      "聆聽",
+      58,
+      0
+     ],
+     [
+      "藝術與手藝",
+      57,
+      0
+     ],
+     [
+      "話術",
+      19,
+      0
+     ],
+     [
+      "說服",
+      58,
+      0
+     ],
+     [
+      "電腦使用",
+      79,
+      0
+     ],
+     [
+      "領導",
+      54,
+      0
+     ],
+     [
+      "魅惑",
+      56,
+      0
+     ]
+    ],
+    "b": {
+     "傷疤或遺憾": "太早離開的那份工作",
+     "寶貴之物": "一份證書",
+     "思想信念": "凡事要有證據",
+     "意義非凡之地": "講台或會場",
+     "特質": "擅長把複雜的講簡單",
+     "重要之人": "帶過的學生或後輩"
+    }
+   },
+   "occ": {
+    "1920": [
+     "作家",
+     "古董商",
+     "商人",
+     "大學教授",
+     "工程師",
+     "律師",
+     "掮客",
+     "教師",
+     "神職人員",
+     "私家偵探",
+     "考古學家",
+     "藝術家",
+     "記者",
+     "醫師"
+    ],
+    "modern": [
+     "上班族",
+     "作家",
+     "公務員",
+     "創作者",
+     "大學教員",
+     "學生",
+     "工程師",
+     "教師／講師",
+     "業務",
+     "法律從業者",
+     "研究者",
+     "經營者",
+     "自由工作者",
+     "記者／編輯",
+     "設計師",
+     "警察／調查人員",
+     "醫療從業者",
+     "顧問"
+    ]
+   }
+  },
+  {
+   "loc": "zh-Hant",
+   "name": "阿明",
+   "link": "AQDEUwcG6Zi_5piOOD09TEwpQlYflVUBDw5CBRICAQMGBQQOIxgDeQBDFzhFQ15MI5oBigF0QnRyJnSeAWxwcg",
+   "card": {
+    "n": "阿明",
+    "o": {
+     "1920": "工程師",
+     "modern": "顧問"
+    },
+    "c": {
+     "APP": 55,
+     "CON": 60,
+     "DEX": 60,
+     "INT": 75,
+     "LUCK": 40,
+     "POW": 65,
+     "SIZ": 85,
+     "STR": 30,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 14,
+     "MP": 13,
+     "SAN": 65
+    },
+    "s": [
+     [
+      "估價",
+      11,
+      1
+     ],
+     [
+      "信用評級",
+      28,
+      0
+     ],
+     [
+      "偵查",
+      34,
+      1
+     ],
+     [
+      "圖書館使用",
+      33,
+      1
+     ],
+     [
+      "外語",
+      47,
+      0
+     ],
+     [
+      "心理學",
+      38,
+      0
+     ],
+     [
+      "攝影",
+      17,
+      1
+     ],
+     [
+      "教學",
+      77,
+      0
+     ],
+     [
+      "母語",
+      69,
+      0
+     ],
+     [
+      "法律",
+      58,
+      0
+     ],
+     [
+      "科學",
+      33,
+      0
+     ],
+     [
+      "聆聽",
+      58,
+      0
+     ],
+     [
+      "藝術與手藝",
+      57,
+      0
+     ],
+     [
+      "話術",
+      19,
+      0
+     ],
+     [
+      "說服",
+      58,
+      0
+     ],
+     [
+      "電腦使用",
+      79,
+      0
+     ],
+     [
+      "領導",
+      54,
+      0
+     ],
+     [
+      "魅惑",
+      56,
+      0
+     ]
+    ],
+    "b": {
+     "傷疤或遺憾": "太早離開的那份工作",
+     "寶貴之物": "一份證書",
+     "思想信念": "凡事要有證據",
+     "意義非凡之地": "講台或會場",
+     "特質": "擅長把複雜的講簡單",
+     "重要之人": "帶過的學生或後輩"
+    }
+   },
+   "occ": {
+    "1920": [
+     "作家",
+     "古董商",
+     "商人",
+     "大學教授",
+     "工程師",
+     "律師",
+     "掮客",
+     "教師",
+     "神職人員",
+     "私家偵探",
+     "考古學家",
+     "藝術家",
+     "記者",
+     "醫師"
+    ],
+    "modern": [
+     "上班族",
+     "作家",
+     "公務員",
+     "創作者",
+     "大學教員",
+     "學生",
+     "工程師",
+     "教師／講師",
+     "業務",
+     "法律從業者",
+     "研究者",
+     "經營者",
+     "自由工作者",
+     "記者／編輯",
+     "設計師",
+     "警察／調查人員",
+     "醫療從業者",
+     "顧問"
+    ]
+   }
+  },
+  {
+   "loc": "en",
+   "name": "",
+   "link": "AQG-oAY9JEJMR1Y9My6VVQEJDT0JAwIBAgICBgcjGAP5AEMTIjozREQqmgGOAXhObmowfheeAXyAAeE",
+   "card": {
+    "n": "",
+    "o": {
+     "1920": "Engineer",
+     "modern": "Consultant"
+    },
+    "c": {
+     "APP": 60,
+     "CON": 35,
+     "DEX": 65,
+     "INT": 70,
+     "LUCK": 85,
+     "POW": 60,
+     "SIZ": 50,
+     "STR": 45,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 8,
+     "MP": 12,
+     "SAN": 60
+    },
+    "s": [
+     [
+      "人類學",
+      9,
+      1
+     ],
+     [
+      "估價",
+      17,
+      0
+     ],
+     [
+      "信用評級",
+      29,
+      0
+     ],
+     [
+      "圖書館使用",
+      25,
+      1
+     ],
+     [
+      "外語",
+      34,
+      0
+     ],
+     [
+      "心理學",
+      34,
+      0
+     ],
+     [
+      "攝影",
+      21,
+      0
+     ],
+     [
+      "教學",
+      77,
+      0
+     ],
+     [
+      "母語",
+      71,
+      0
+     ],
+     [
+      "法律",
+      60,
+      0
+     ],
+     [
+      "科學",
+      39,
+      0
+     ],
+     [
+      "聆聽",
+      55,
+      0
+     ],
+     [
+      "藝術與手藝",
+      53,
+      0
+     ],
+     [
+      "話術",
+      24,
+      0
+     ],
+     [
+      "說服",
+      63,
+      0
+     ],
+     [
+      "談判",
+      11,
+      1
+     ],
+     [
+      "電腦使用",
+      79,
+      0
+     ],
+     [
+      "領導",
+      62,
+      0
+     ],
+     [
+      "魅惑",
+      64,
+      0
+     ]
+    ],
+    "b": {
+     "Scars or Regrets": "A job they left too soon",
+     "Treasured Possessions": "A certificate",
+     "Ideology / Beliefs": "Everything needs evidence",
+     "Meaningful Locations": "A lectern or a stage",
+     "Traits": "Has a hand in everything",
+     "Significant People": "Someone they taught"
+    }
+   },
+   "occ": {
+    "1920": [
+     "Antiquarian",
+     "Archaeologist",
+     "Artist",
+     "Author",
+     "Broker",
+     "Businessman",
+     "Clergy",
+     "Doctor",
+     "Engineer",
+     "Journalist",
+     "Lawyer",
+     "Private Investigator",
+     "Professor",
+     "Teacher"
+    ],
+    "modern": [
+     "Business Owner",
+     "Civil Servant",
+     "Consultant",
+     "Creator",
+     "Designer",
+     "Engineer",
+     "Freelancer",
+     "Healthcare Worker",
+     "Journalist / Editor",
+     "Legal Professional",
+     "Office Worker",
+     "Police / Investigator",
+     "Researcher",
+     "Salesperson",
+     "Student",
+     "Teacher / Trainer",
+     "University Lecturer",
+     "Writer"
+    ]
+   }
+  },
+  {
+   "loc": "en",
+   "name": "阿明",
+   "link": "AQG-oAcG6Zi_5piOPSRCTEdWPTMulVUBCQ09CQMCAQICAgYHIxgD-QBDEyI6M0REKpoBjgF4Tm5qMH4XngF8gAFi",
+   "card": {
+    "n": "阿明",
+    "o": {
+     "1920": "Engineer",
+     "modern": "Consultant"
+    },
+    "c": {
+     "APP": 60,
+     "CON": 35,
+     "DEX": 65,
+     "INT": 70,
+     "LUCK": 85,
+     "POW": 60,
+     "SIZ": 50,
+     "STR": 45,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 8,
+     "MP": 12,
+     "SAN": 60
+    },
+    "s": [
+     [
+      "人類學",
+      9,
+      1
+     ],
+     [
+      "估價",
+      17,
+      0
+     ],
+     [
+      "信用評級",
+      29,
+      0
+     ],
+     [
+      "圖書館使用",
+      25,
+      1
+     ],
+     [
+      "外語",
+      34,
+      0
+     ],
+     [
+      "心理學",
+      34,
+      0
+     ],
+     [
+      "攝影",
+      21,
+      0
+     ],
+     [
+      "教學",
+      77,
+      0
+     ],
+     [
+      "母語",
+      71,
+      0
+     ],
+     [
+      "法律",
+      60,
+      0
+     ],
+     [
+      "科學",
+      39,
+      0
+     ],
+     [
+      "聆聽",
+      55,
+      0
+     ],
+     [
+      "藝術與手藝",
+      53,
+      0
+     ],
+     [
+      "話術",
+      24,
+      0
+     ],
+     [
+      "說服",
+      63,
+      0
+     ],
+     [
+      "談判",
+      11,
+      1
+     ],
+     [
+      "電腦使用",
+      79,
+      0
+     ],
+     [
+      "領導",
+      62,
+      0
+     ],
+     [
+      "魅惑",
+      64,
+      0
+     ]
+    ],
+    "b": {
+     "Scars or Regrets": "A job they left too soon",
+     "Treasured Possessions": "A certificate",
+     "Ideology / Beliefs": "Everything needs evidence",
+     "Meaningful Locations": "A lectern or a stage",
+     "Traits": "Has a hand in everything",
+     "Significant People": "Someone they taught"
+    }
+   },
+   "occ": {
+    "1920": [
+     "Antiquarian",
+     "Archaeologist",
+     "Artist",
+     "Author",
+     "Broker",
+     "Businessman",
+     "Clergy",
+     "Doctor",
+     "Engineer",
+     "Journalist",
+     "Lawyer",
+     "Private Investigator",
+     "Professor",
+     "Teacher"
+    ],
+    "modern": [
+     "Business Owner",
+     "Civil Servant",
+     "Consultant",
+     "Creator",
+     "Designer",
+     "Engineer",
+     "Freelancer",
+     "Healthcare Worker",
+     "Journalist / Editor",
+     "Legal Professional",
+     "Office Worker",
+     "Police / Investigator",
+     "Researcher",
+     "Salesperson",
+     "Student",
+     "Teacher / Trainer",
+     "University Lecturer",
+     "Writer"
+    ]
+   }
+  },
+  {
+   "loc": "ja",
+   "name": "",
+   "link": "AQKzdwYzURVMTEc9WzOVVQESDT0IAwQBBQQEBAUjGAN5AEMVhgE-NlgfkgGQAXZecHRGepwBaIQBSg",
+   "card": {
+    "n": "",
+    "o": {
+     "1920": "技術者",
+     "modern": "コンサルタント"
+    },
+    "c": {
+     "APP": 50,
+     "CON": 80,
+     "DEX": 20,
+     "INT": 75,
+     "LUCK": 70,
+     "POW": 60,
+     "SIZ": 90,
+     "STR": 50,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 17,
+     "MP": 12,
+     "SAN": 60
+    },
+    "s": [
+     [
+      "人類學",
+      10,
+      1
+     ],
+     [
+      "信用評級",
+      67,
+      0
+     ],
+     [
+      "圖書館使用",
+      31,
+      0
+     ],
+     [
+      "外語",
+      27,
+      0
+     ],
+     [
+      "心理學",
+      44,
+      0
+     ],
+     [
+      "攝影",
+      15,
+      1
+     ],
+     [
+      "教學",
+      73,
+      0
+     ],
+     [
+      "母語",
+      72,
+      0
+     ],
+     [
+      "法律",
+      59,
+      0
+     ],
+     [
+      "科學",
+      47,
+      0
+     ],
+     [
+      "聆聽",
+      56,
+      0
+     ],
+     [
+      "藝術與手藝",
+      58,
+      0
+     ],
+     [
+      "話術",
+      35,
+      0
+     ],
+     [
+      "說服",
+      61,
+      0
+     ],
+     [
+      "電腦使用",
+      78,
+      0
+     ],
+     [
+      "領導",
+      52,
+      0
+     ],
+     [
+      "魅惑",
+      66,
+      0
+     ]
+    ],
+    "b": {
+     "傷跡や心残り": "早く辞めすぎた仕事",
+     "秘蔵の品": "一枚の証書",
+     "イデオロギー／信念": "技術より人",
+     "意味のある場所": "母校",
+     "特徴": "複雑なことを簡単に説明できる",
+     "重要な人々": "担当した顧客"
+    }
+   },
+   "occ": {
+    "1920": [
+     "仲介人",
+     "作家",
+     "医師",
+     "古物商",
+     "大学教授",
+     "実業家",
+     "弁護士",
+     "技術者",
+     "教師",
+     "私立探偵",
+     "考古学者",
+     "聖職者",
+     "芸術家",
+     "記者"
+    ],
+    "modern": [
+     "エンジニア",
+     "クリエイター",
+     "コンサルタント",
+     "デザイナー",
+     "フリーランス",
+     "会社員",
+     "作家",
+     "公務員",
+     "医療従事者",
+     "営業",
+     "大学教員",
+     "学生",
+     "教師／講師",
+     "法律関係者",
+     "研究者",
+     "経営者",
+     "記者／編集者",
+     "警察官／調査員"
+    ]
+   }
+  },
+  {
+   "loc": "ja",
+   "name": "阿明",
+   "link": "AQKzdwcG6Zi_5piOM1EVTExHPVszlVUBEg09CAMEAQUEBAQFIxgDeQBDFYYBPjZYH5IBkAF2XnB0RnqcAWiEAYE",
+   "card": {
+    "n": "阿明",
+    "o": {
+     "1920": "技術者",
+     "modern": "コンサルタント"
+    },
+    "c": {
+     "APP": 50,
+     "CON": 80,
+     "DEX": 20,
+     "INT": 75,
+     "LUCK": 70,
+     "POW": 60,
+     "SIZ": 90,
+     "STR": 50,
+     "EDU": 75
+    },
+    "x": {
+     "APP": "rolled",
+     "CON": "rolled",
+     "DEX": "rolled",
+     "INT": "rolled",
+     "LUCK": "rolled",
+     "POW": "rolled",
+     "SIZ": "rolled",
+     "STR": "rolled",
+     "EDU": "read"
+    },
+    "d": {
+     "HP": 17,
+     "MP": 12,
+     "SAN": 60
+    },
+    "s": [
+     [
+      "人類學",
+      10,
+      1
+     ],
+     [
+      "信用評級",
+      67,
+      0
+     ],
+     [
+      "圖書館使用",
+      31,
+      0
+     ],
+     [
+      "外語",
+      27,
+      0
+     ],
+     [
+      "心理學",
+      44,
+      0
+     ],
+     [
+      "攝影",
+      15,
+      1
+     ],
+     [
+      "教學",
+      73,
+      0
+     ],
+     [
+      "母語",
+      72,
+      0
+     ],
+     [
+      "法律",
+      59,
+      0
+     ],
+     [
+      "科學",
+      47,
+      0
+     ],
+     [
+      "聆聽",
+      56,
+      0
+     ],
+     [
+      "藝術與手藝",
+      58,
+      0
+     ],
+     [
+      "話術",
+      35,
+      0
+     ],
+     [
+      "說服",
+      61,
+      0
+     ],
+     [
+      "電腦使用",
+      78,
+      0
+     ],
+     [
+      "領導",
+      52,
+      0
+     ],
+     [
+      "魅惑",
+      66,
+      0
+     ]
+    ],
+    "b": {
+     "傷跡や心残り": "早く辞めすぎた仕事",
+     "秘蔵の品": "一枚の証書",
+     "イデオロギー／信念": "技術より人",
+     "意味のある場所": "母校",
+     "特徴": "複雑なことを簡単に説明できる",
+     "重要な人々": "担当した顧客"
+    }
+   },
+   "occ": {
+    "1920": [
+     "仲介人",
+     "作家",
+     "医師",
+     "古物商",
+     "大学教授",
+     "実業家",
+     "弁護士",
+     "技術者",
+     "教師",
+     "私立探偵",
+     "考古学者",
+     "聖職者",
+     "芸術家",
+     "記者"
+    ],
+    "modern": [
+     "エンジニア",
+     "クリエイター",
+     "コンサルタント",
+     "デザイナー",
+     "フリーランス",
+     "会社員",
+     "作家",
+     "公務員",
+     "医療従事者",
+     "営業",
+     "大学教員",
+     "学生",
+     "教師／講師",
+     "法律関係者",
+     "研究者",
+     "経営者",
+     "記者／編集者",
+     "警察官／調査員"
+    ]
+   }
+  }
+ ]
+}

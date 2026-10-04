@@ -1,0 +1,308 @@
+{
+ "mode": "check",
+ "model": "jev-1.13.0",
+ "redacted": {},
+ "chars": {
+  "STR": 45,
+  "CON": 60,
+  "SIZ": 50,
+  "DEX": 65,
+  "APP": 60,
+  "INT": 70,
+  "POW": 55,
+  "EDU": 65,
+  "LUCK": 50
+ },
+ "derived": {
+  "HP": 11,
+  "MP": 11,
+  "SAN": 55
+ },
+ "budget": {
+  "interest": 140,
+  "occupation": 260
+ },
+ "spent": 533,
+ "skills": {
+  "Language (Own)": {
+   "level": 3.56,
+   "confidence": 0.63,
+   "evidence": 0.98,
+   "value": 82,
+   "ceiling": 82,
+   "top": [
+    4,
+    0.73
+   ],
+   "second": [
+    3,
+    0.18
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.03,
+    "2": 0.04,
+    "3": 0.18,
+    "4": 0.73
+   },
+   "claimed": 80,
+   "base": 0,
+   "known": true,
+   "verdict": "ok"
+  },
+  "Library Use": {
+   "level": 2.51,
+   "confidence": 0,
+   "evidence": 0.92,
+   "value": 61,
+   "ceiling": 61,
+   "top": [
+    4,
+    0.35
+   ],
+   "second": [
+    1,
+    0.28
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.08,
+    "1": 0.28,
+    "2": 0.05,
+    "3": 0.24,
+    "4": 0.35
+   },
+   "claimed": 70,
+   "base": 20,
+   "known": true,
+   "verdict": "爭議"
+  },
+  "Spot Hidden": {
+   "level": 2.64,
+   "confidence": 0.42,
+   "evidence": 0.99,
+   "value": 63,
+   "ceiling": 63,
+   "top": [
+    3,
+    0.53
+   ],
+   "second": [
+    1,
+    0.21
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.21,
+    "2": 0.08,
+    "3": 0.53,
+    "4": 0.17
+   },
+   "claimed": 70,
+   "base": 25,
+   "known": true,
+   "verdict": "邊緣"
+  },
+  "Persuade": {
+   "level": 1.54,
+   "confidence": 0.46,
+   "evidence": 0.95,
+   "value": 41,
+   "ceiling": 41,
+   "top": [
+    1,
+    0.64
+   ],
+   "second": [
+    3,
+    0.24
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.64,
+    "2": 0.05,
+    "3": 0.24,
+    "4": 0.02
+   },
+   "claimed": 65,
+   "base": 10,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "Fast Talk": {
+   "level": 1.17,
+   "confidence": 0.81,
+   "evidence": 0.97,
+   "value": 34,
+   "ceiling": 34,
+   "top": [
+    1,
+    0.85
+   ],
+   "second": [
+    2,
+    0.05
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.85,
+    "2": 0.05,
+    "3": 0.05,
+    "4": 0.02
+   },
+   "claimed": 60,
+   "base": 5,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "Climb": {
+   "level": 1.39,
+   "confidence": 0.62,
+   "evidence": 0.97,
+   "value": 38,
+   "ceiling": 38,
+   "top": [
+    1,
+    0.72
+   ],
+   "second": [
+    3,
+    0.17
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.03,
+    "1": 0.72,
+    "2": 0.08,
+    "3": 0.17,
+    "4": 0
+   },
+   "claimed": 55,
+   "base": 20,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "Drive Auto": {
+   "level": 2.98,
+   "confidence": 0.96,
+   "evidence": 1,
+   "value": 69,
+   "ceiling": 69,
+   "top": [
+    3,
+    0.96
+   ],
+   "second": [
+    2,
+    0.02
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0.01,
+    "2": 0.02,
+    "3": 0.96,
+    "4": 0.01
+   },
+   "claimed": 55,
+   "base": 20,
+   "known": true,
+   "verdict": "ok"
+  },
+  "Locksmith": {
+   "level": 1.18,
+   "confidence": 0.82,
+   "evidence": 0.98,
+   "value": 34,
+   "ceiling": 34,
+   "top": [
+    1,
+    0.84
+   ],
+   "second": [
+    2,
+    0.08
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.84,
+    "2": 0.08,
+    "3": 0.05,
+    "4": 0.01
+   },
+   "claimed": 50,
+   "base": 1,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "Computer Use": {
+   "level": 0.12,
+   "confidence": 0.9,
+   "evidence": 0.09999999999999998,
+   "value": 21,
+   "ceiling": 21,
+   "top": [
+    0,
+    0.9
+   ],
+   "second": [
+    1,
+    0.1
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.9,
+    "1": 0.1,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "claimed": 75,
+   "base": 5,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "Medicine": {
+   "level": 0.11,
+   "confidence": 0.91,
+   "evidence": 0.10999999999999999,
+   "value": 21,
+   "ceiling": 21,
+   "top": [
+    0,
+    0.89
+   ],
+   "second": [
+    1,
+    0.11
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.89,
+    "1": 0.11,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "claimed": 60,
+   "base": 1,
+   "known": true,
+   "verdict": "撐不起"
+  }
+ },
+ "character": "Lin Shu-han, 28, local newspaper reporter",
+ "systemTitle": "1920s / Modern Investigators (d100)",
+ "levels": [
+  "The document contains nothing at all related to this ability",
+  "It mentions a related environment or exposure, but does not say the person can do it",
+  "It establishes how the person learned or came into contact with this ability",
+  "It describes actually using this ability",
+  "It describes long-term, professional-level training or experience"
+ ],
+ "locale": "en"
+}

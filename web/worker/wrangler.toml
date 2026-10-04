@@ -1,0 +1,47 @@
+name = "jevtrpg"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# This is the default (local and fork) configuration: nothing third-party is switched on.
+# No ads, no analytics, no human-check widget, no custom domain, no account id.
+#   npm run dev        -> http://127.0.0.1:8787
+# To deploy your own copy: `npx wrangler login`, add a `routes` entry or use workers.dev,
+# set the secrets below, then `npx wrangler deploy`.
+
+[assets]
+directory = "../public"
+binding = "ASSETS"
+# These three pages go through the Worker first so that ?lang=en / ?lang=ja can rewrite <head>
+# (social preview cards are read by crawlers that don't run JS). Other static files bypass the Worker.
+run_worker_first = ["/", "/character", "/privacy"]
+
+# Usage quota: one Durable Object counts exactly (src/quota.js).
+[[durable_objects.bindings]]
+name = "QUOTA"
+class_name = "Quota"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Quota"]
+
+# Secrets are never written here:
+#   npx wrangler secret put TYPESAFE_API_KEY     # required: the judging model
+#   npx wrangler secret put TURNSTILE_SECRET     # optional: without it every request counts as "verified"
+#   npx wrangler secret put POSTHOG_KEY          # optional: without it the page loads no analytics
+#   npx wrangler secret put QUOTA_SALT           # salt for the IP hash used by the quota counter
+#   npx wrangler secret put QUOTA_STATUS_TOKEN   # optional: enables GET /api/quota-status for a monitor
+# Local development: put the same names in web/worker/.dev.vars (git-ignored).
+
+[vars]
+# Quota (adjustable). ok = human check passed; weak = failed or no token.
+# Per IP per hour, and for the whole site per day (the daily count resets at midnight Taipei time).
+QUOTA_OK_IP_HOUR = "30"
+QUOTA_OK_DAY = "2000"
+QUOTA_WEAK_IP_HOUR = "4"
+QUOTA_WEAK_DAY = "150"
+# Public front-end settings. Empty means that feature is switched off entirely.
+PUBLIC_TURNSTILE_SITEKEY = ""
+POSTHOG_HOST = "https://us.i.posthog.com"
+ADSENSE_CLIENT = ""
+ADSENSE_SLOT_RESULTS = ""
+ADSENSE_SLOT_FOOTER = ""

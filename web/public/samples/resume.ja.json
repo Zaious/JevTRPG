@@ -1,0 +1,1064 @@
+{
+ "mode": "build",
+ "model": "jev-1.13.0",
+ "redacted": {},
+ "chars": {
+  "APP": 50,
+  "CON": 80,
+  "DEX": 20,
+  "INT": 75,
+  "LUCK": 70,
+  "POW": 60,
+  "SIZ": 90,
+  "STR": 50,
+  "EDU": 75
+ },
+ "sources": {
+  "APP": "rolled",
+  "CON": "rolled",
+  "DEX": "rolled",
+  "INT": "rolled",
+  "LUCK": "rolled",
+  "POW": "rolled",
+  "SIZ": "rolled",
+  "STR": "rolled",
+  "EDU": "read"
+ },
+ "derived": {
+  "HP": 17,
+  "MP": 12,
+  "SAN": 60
+ },
+ "budget": {
+  "interest": 150,
+  "occupation": 300
+ },
+ "capped": false,
+ "skills": {
+  "人類學": {
+   "level": 0.44,
+   "confidence": 0.63,
+   "evidence": 0.36,
+   "value": 10,
+   "ceiling": 25,
+   "top": [
+    0,
+    0.64
+   ],
+   "second": [
+    1,
+    0.29
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.64,
+    "1": 0.29,
+    "2": 0.05,
+    "3": 0.02,
+    "4": 0
+   },
+   "base": 1,
+   "label": "人類学"
+  },
+  "估價": {
+   "level": 0.25,
+   "confidence": 0.79,
+   "evidence": 0.16000000000000003,
+   "value": 9,
+   "ceiling": 23,
+   "top": [
+    0,
+    0.84
+   ],
+   "second": [
+    1,
+    0.1
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.84,
+    "1": 0.1,
+    "2": 0.03,
+    "3": 0.03,
+    "4": 0
+   },
+   "base": 5,
+   "label": "鑑定"
+  },
+  "信用評級": {
+   "level": 3.38,
+   "confidence": 0.49,
+   "evidence": 0.95,
+   "value": 67,
+   "ceiling": 78,
+   "top": [
+    4,
+    0.64
+   ],
+   "second": [
+    3,
+    0.22
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.04,
+    "2": 0.05,
+    "3": 0.22,
+    "4": 0.64
+   },
+   "base": 0,
+   "label": "信用"
+  },
+  "偵查": {
+   "level": 0.4,
+   "confidence": 0.67,
+   "evidence": 0.28,
+   "value": 26,
+   "ceiling": 25,
+   "top": [
+    0,
+    0.72
+   ],
+   "second": [
+    1,
+    0.19
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.72,
+    "1": 0.19,
+    "2": 0.06,
+    "3": 0.03,
+    "4": 0
+   },
+   "base": 25,
+   "label": "目星"
+  },
+  "動物馴養": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 5,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 5,
+   "label": "動物使い"
+  },
+  "博物學": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "博物学"
+  },
+  "圖書館使用": {
+   "level": 1.11,
+   "confidence": 0.08,
+   "evidence": 0.5800000000000001,
+   "value": 31,
+   "ceiling": 37,
+   "top": [
+    0,
+    0.42
+   ],
+   "second": [
+    1,
+    0.25
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.42,
+    "1": 0.25,
+    "2": 0.14,
+    "3": 0.17,
+    "4": 0.02
+   },
+   "base": 20,
+   "label": "図書館"
+  },
+  "外語": {
+   "level": 1.32,
+   "confidence": 0,
+   "evidence": 0.64,
+   "value": 27,
+   "ceiling": 40,
+   "top": [
+    0,
+    0.36
+   ],
+   "second": [
+    2,
+    0.33
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.36,
+    "1": 0.13,
+    "2": 0.33,
+    "3": 0.17,
+    "4": 0.01
+   },
+   "base": 1,
+   "label": "他言語"
+  },
+  "導航": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "ナビゲート"
+  },
+  "心理學": {
+   "level": 2.15,
+   "confidence": 0.29,
+   "evidence": 0.96,
+   "value": 44,
+   "ceiling": 54,
+   "top": [
+    3,
+    0.46
+   ],
+   "second": [
+    2,
+    0.28
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.22,
+    "2": 0.28,
+    "3": 0.46,
+    "4": 0
+   },
+   "base": 10,
+   "label": "心理学"
+  },
+  "急救": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 30,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 30,
+   "label": "応急手当"
+  },
+  "恐嚇": {
+   "level": 0.05,
+   "confidence": 0.96,
+   "evidence": 0.040000000000000036,
+   "value": 15,
+   "ceiling": 21,
+   "top": [
+    0,
+    0.96
+   ],
+   "second": [
+    1,
+    0.03
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.96,
+    "1": 0.03,
+    "2": 0.01,
+    "3": 0,
+    "4": 0
+   },
+   "base": 15,
+   "label": "威圧"
+  },
+  "攝影": {
+   "level": 0.63,
+   "confidence": 0.47,
+   "evidence": 0.35,
+   "value": 15,
+   "ceiling": 29,
+   "top": [
+    0,
+    0.65
+   ],
+   "second": [
+    1,
+    0.18
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.65,
+    "1": 0.18,
+    "2": 0.08,
+    "3": 0.09,
+    "4": 0
+   },
+   "base": 5,
+   "label": "写真術"
+  },
+  "教學": {
+   "level": 3.63,
+   "confidence": 0.69,
+   "evidence": 1,
+   "value": 73,
+   "ceiling": 83,
+   "top": [
+    4,
+    0.63
+   ],
+   "second": [
+    3,
+    0.37
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0.37,
+    "4": 0.63
+   },
+   "base": 5,
+   "label": "教授"
+  },
+  "會計": {
+   "level": 0.03,
+   "confidence": 0.98,
+   "evidence": 0.020000000000000018,
+   "value": 5,
+   "ceiling": 20,
+   "top": [
+    0,
+    0.98
+   ],
+   "second": [
+    1,
+    0.02
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.98,
+    "1": 0.02,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 5,
+   "label": "経理"
+  },
+  "機械維修": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "機械修理"
+  },
+  "歷史": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 5,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 5,
+   "label": "歴史"
+  },
+  "母語": {
+   "level": 3.57,
+   "confidence": 0.65,
+   "evidence": 1,
+   "value": 72,
+   "ceiling": 82,
+   "top": [
+    4,
+    0.61
+   ],
+   "second": [
+    3,
+    0.38
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0.01,
+    "3": 0.38,
+    "4": 0.61
+   },
+   "base": 0,
+   "label": "母国語"
+  },
+  "法律": {
+   "level": 2.96,
+   "confidence": 0.93,
+   "evidence": 1,
+   "value": 59,
+   "ceiling": 69,
+   "top": [
+    3,
+    0.92
+   ],
+   "second": [
+    2,
+    0.06
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0.06,
+    "3": 0.92,
+    "4": 0.02
+   },
+   "base": 5,
+   "label": "法律"
+  },
+  "生存": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "サバイバル"
+  },
+  "神秘學": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 5,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 5,
+   "label": "オカルト"
+  },
+  "科學": {
+   "level": 2.33,
+   "confidence": 0.46,
+   "evidence": 0.95,
+   "value": 47,
+   "ceiling": 57,
+   "top": [
+    2,
+    0.54
+   ],
+   "second": [
+    3,
+    0.2
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.06,
+    "2": 0.54,
+    "3": 0.2,
+    "4": 0.15
+   },
+   "base": 1,
+   "label": "科学"
+  },
+  "精神分析": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 1,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 1,
+   "label": "精神分析"
+  },
+  "考古學": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 1,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 1,
+   "label": "考古学"
+  },
+  "聆聽": {
+   "level": 2.81,
+   "confidence": 0.8,
+   "evidence": 1,
+   "value": 56,
+   "ceiling": 66,
+   "top": [
+    3,
+    0.8099999999999999
+   ],
+   "second": [
+    2,
+    0.1
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0.06,
+    "2": 0.1,
+    "3": 0.8099999999999999,
+    "4": 0.03
+   },
+   "base": 20,
+   "label": "聞き耳"
+  },
+  "藝術與手藝": {
+   "level": 2.88,
+   "confidence": 0.88,
+   "evidence": 0.98,
+   "value": 58,
+   "ceiling": 68,
+   "top": [
+    3,
+    0.91
+   ],
+   "second": [
+    2,
+    0.04
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.02,
+    "2": 0.04,
+    "3": 0.91,
+    "4": 0.01
+   },
+   "base": 5,
+   "label": "芸術／製作"
+  },
+  "話術": {
+   "level": 1.7,
+   "confidence": 0.26,
+   "evidence": 0.8,
+   "value": 35,
+   "ceiling": 46,
+   "top": [
+    2,
+    0.33
+   ],
+   "second": [
+    3,
+    0.25
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.2,
+    "1": 0.2,
+    "2": 0.33,
+    "3": 0.25,
+    "4": 0.02
+   },
+   "base": 5,
+   "label": "言いくるめ"
+  },
+  "說服": {
+   "level": 3.03,
+   "confidence": 0.83,
+   "evidence": 1,
+   "value": 61,
+   "ceiling": 71,
+   "top": [
+    3,
+    0.8099999999999999
+   ],
+   "second": [
+    4,
+    0.12
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0.02,
+    "2": 0.05,
+    "3": 0.8099999999999999,
+    "4": 0.12
+   },
+   "base": 10,
+   "label": "説得"
+  },
+  "談判": {
+   "level": 0.22,
+   "confidence": 0.82,
+   "evidence": 0.19999999999999996,
+   "value": 8,
+   "ceiling": 22,
+   "top": [
+    0,
+    0.8
+   ],
+   "second": [
+    1,
+    0.19
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.8,
+    "1": 0.19,
+    "2": 0.01,
+    "3": 0,
+    "4": 0
+   },
+   "base": 5,
+   "label": "交渉"
+  },
+  "追蹤": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "追跡"
+  },
+  "醫學": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 1,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 1,
+   "label": "医学"
+  },
+  "鎖匠": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 1,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 1,
+   "label": "鍵開け"
+  },
+  "電子學": {
+   "level": 0.08,
+   "confidence": 0.93,
+   "evidence": 0.07000000000000006,
+   "value": 3,
+   "ceiling": 21,
+   "top": [
+    0,
+    0.9299999999999999
+   ],
+   "second": [
+    1,
+    0.05
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.9299999999999999,
+    "1": 0.05,
+    "2": 0.01,
+    "3": 0.01,
+    "4": 0
+   },
+   "base": 1,
+   "label": "電子工学"
+  },
+  "電氣維修": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 10,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 10,
+   "label": "電気修理"
+  },
+  "電腦使用": {
+   "level": 3.92,
+   "confidence": 0.93,
+   "evidence": 1,
+   "value": 78,
+   "ceiling": 88,
+   "top": [
+    4,
+    0.92
+   ],
+   "second": [
+    3,
+    0.08
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0.08,
+    "4": 0.92
+   },
+   "base": 5,
+   "label": "コンピューター"
+  },
+  "領導": {
+   "level": 2.6,
+   "confidence": 0.62,
+   "evidence": 0.99,
+   "value": 52,
+   "ceiling": 63,
+   "top": [
+    3,
+    0.69
+   ],
+   "second": [
+    2,
+    0.16
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.11,
+    "2": 0.16,
+    "3": 0.69,
+    "4": 0.03
+   },
+   "base": 5,
+   "label": "統率"
+  },
+  "駕駛汽車": {
+   "level": 0,
+   "confidence": 1,
+   "evidence": 0,
+   "value": 20,
+   "ceiling": 20,
+   "top": [
+    0,
+    1
+   ],
+   "second": [
+    1,
+    0
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "base": 20,
+   "label": "運転（自動車）"
+  },
+  "魅惑": {
+   "level": 3.28,
+   "confidence": 0.52,
+   "evidence": 0.98,
+   "value": 66,
+   "ceiling": 76,
+   "top": [
+    3,
+    0.48
+   ],
+   "second": [
+    4,
+    0.43
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.02,
+    "1": 0.01,
+    "2": 0.06,
+    "3": 0.48,
+    "4": 0.43
+   },
+   "base": 15,
+   "label": "魅惑"
+  }
+ },
+ "final": null,
+ "occupationSkills": [],
+ "occupations": {
+  "1920": {
+   "choice": "技術者",
+   "confidence": 0.93,
+   "alternatives": [
+    [
+     "教師",
+     0.05
+    ],
+    [
+     "実業家",
+     0.01
+    ],
+    [
+     "記者",
+     0
+    ]
+   ]
+  },
+  "modern": {
+   "choice": "コンサルタント",
+   "confidence": 0.99,
+   "alternatives": [
+    [
+     "大学教員",
+     0
+    ],
+    [
+     "研究者",
+     0
+    ],
+    [
+     "記者／編集者",
+     0
+    ]
+   ]
+  }
+ },
+ "backstory": {
+  "傷跡や心残り": {
+   "choice": "早く辞めすぎた仕事",
+   "confidence": 0.44
+  },
+  "秘蔵の品": {
+   "choice": "一枚の証書",
+   "confidence": 0.4
+  },
+  "イデオロギー／信念": {
+   "choice": "技術より人",
+   "confidence": 0.35
+  },
+  "意味のある場所": {
+   "choice": "母校",
+   "confidence": 0.35
+  },
+  "特徴": {
+   "choice": "複雑なことを簡単に説明できる",
+   "confidence": 0.8
+  },
+  "重要な人々": {
+   "choice": "担当した顧客",
+   "confidence": 0.7
+  }
+ },
+ "systemTitle": "1920年代／現代の探索者（d100）",
+ "levels": [
+  "この能力に関係することが文書にまったくない",
+  "関連する環境や接点には触れているが、本人ができるとは書いていない",
+  "この能力を学んだ、または接した経緯が書かれている",
+  "この能力を実際に使った経験が書かれている",
+  "長期的・専門的な訓練や経験が書かれている"
+ ],
+ "locale": "ja"
+}

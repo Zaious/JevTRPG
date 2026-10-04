@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" width="120" height="150">
+<!-- 照片欄裡的調查員：軟呢帽、豎起領子的風衣。原創剪影，泛黃的舊相片色。 -->
+<defs>
+  <radialGradient id="inv-bg" cx="50%" cy="38%" r="75%">
+    <stop offset="0" stop-color="#d6c7a3"/>
+    <stop offset=".55" stop-color="#b3a07a"/>
+    <stop offset="1" stop-color="#6f5f45"/>
+  </radialGradient>
+  <linearGradient id="inv-fig" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2e261d"/>
+    <stop offset="1" stop-color="#1f1a14"/>
+  </linearGradient>
+  <filter id="inv-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" values="0 0 0 0 .2  0 0 0 0 .16  0 0 0 0 .1  0 0 0 .28 0" result="g"/>
+    <feComposite in="g" in2="SourceGraphic" operator="in" result="gg"/>
+    <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="gg"/></feMerge>
+  </filter>
+</defs>
+<g filter="url(#inv-grain)">
+  <rect width="120" height="150" fill="url(#inv-bg)"/>
+  <!-- 背後的窗框影子，讓畫面有景深 -->
+  <path d="M84 0 L96 0 L96 150 L84 150 Z M84 58 L120 58 L120 62 L84 62 Z" fill="#8c7a5a" opacity=".35"/>
+  <g fill="url(#inv-fig)">
+    <!-- 大衣與肩 -->
+    <path d="M0 150 L0 131 C5 116 20 106 38 101 L51 96 L60 113 L69 96 L82 101 C100 106 115 116 120 131 L120 150 Z"/>
+    <!-- 脖子 -->
+    <path d="M51 82 L69 82 L70 99 L50 99 Z"/>
+    <!-- 臉：帽簷壓下來，整張臉在陰影裡 -->
+    <path d="M45.5 55 C44.5 69 48.5 84 60 88.5 C71.5 84 75.5 69 74.5 55 Z"/>
+    <!-- 帽冠，頂上有一道凹摺 -->
+    <path d="M41.5 55 C40.5 45 42.5 35 49.5 31.5 C54 29.5 57.5 33 60 33 C62.5 33 66 29.5 70.5 31.5 C77.5 35 79.5 45 78.5 55 Z"/>
+    <!-- 帽簷，微微傾斜 -->
+    <ellipse cx="60" cy="55.5" rx="33.5" ry="6.4" transform="rotate(-4 60 55.5)"/>
+  </g>
+  <!-- 帽帶 -->
+  <path d="M41.6 48.5 L78.4 47.2 L78.6 52.6 L41.4 53.8 Z" fill="#4b3f30"/>
+  <!-- 豎起的領子 -->
+  <path d="M38 101 L51 93 L57.5 121 L45 127 Z" fill="#3a3026"/>
+  <path d="M82 101 L69 93 L62.5 121 L75 127 Z" fill="#3a3026"/>
+  <!-- 襯衫與領帶 -->
+  <path d="M51 96 L60 113 L69 96 Z" fill="#7d6c52"/>
+  <path d="M58.4 99.5 L61.6 99.5 L62.6 112 L60 116 L57.4 112 Z" fill="#221c15"/>
+  <!-- 帽簷在臉上的一條亮邊 -->
+  <path d="M47 61.5 C54 60 66 59.6 73 60.8" stroke="#6f5f45" stroke-width="1" fill="none" opacity=".55"/>
+</g>
+</svg>

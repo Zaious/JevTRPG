@@ -1,0 +1,21 @@
+JevTRPG
+Copyright 2026 ChronicleCore Studio (編年史記工作室)
+Created by Zaious.
+https://studio.chroniclecore.com
+
+JevTRPG is licensed under the MIT License (see LICENSE).
+
+The name "JevTRPG" is not licensed for other works. A modified version that is
+published as a service needs a name of its own.
+
+This is an unofficial fan project. It is not affiliated with, endorsed by, or
+connected to Chaosium Inc. or TypeSafe.
+
+- Skill names are generic terms used across d100 tabletop systems. Every
+  description in systems/ is original text; no rulebook text is included.
+- "Jev" is a judgment model made by TypeSafe. This project is an independent
+  application built around it, and does not include or redistribute the model.
+- The occupation, backstory and skill lists are the project's own and are not
+  taken from any published rulebook.
+
+Third-party components are listed in THIRD_PARTY_LICENSES.txt.

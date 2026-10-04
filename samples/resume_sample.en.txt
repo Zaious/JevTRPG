@@ -1,0 +1,62 @@
+NOTE: This is a FICTIONAL sample résumé. Company, school and award names are invented.
+It is a translation of resume_sample.txt with the same structure, including one role
+that has a title and no bullets, so the three language versions can be compared.
+
+EXPERIENCE
+
+Generative AI Solutions Consultant | Stellar Integrated Marketing Group | 2023/04 – present
+- Advised enterprise clients on generative-AI adoption and collaborated on 5+ proof-of-concept projects.
+- Led a group-wide AI literacy programme for 1,000+ employees and built an assessment platform to verify outcomes.
+- Delivered customised AI-transformation training and workshops for flagship clients in automotive and retail.
+- Built Stable Diffusion and ComfyUI image-generation workflows for advertising creative production.
+- Served as the technical liaison between engineering and business decision-makers.
+- Promoted from AIGC Project Manager to current role in 2025/07.
+
+Independent AI Consultant | Self-employed | 2026/03 – present
+- Take on engagements in enterprise AI-transformation planning, system architecture and AI video applications.
+- Delivered an AI-readiness architecture audit for an overseas client, with a blueprint for hierarchical
+  chunking and RAG metadata; delivered ahead of deadline and passed every acceptance stage.
+
+CTO (part-time) | Ruiling Technology Co., Ltd. | 2026/05 – present
+- Responsible for technical evaluation, research and prototyping.
+- Designed a two-sided data dashboard and assessment-framework visualisation; designed institution-level
+  data isolation and on-premise / air-gapped inference architecture for privacy compliance and on-site
+  network constraints in long-term care settings.
+
+Independent Researcher | 2026/02 – present
+- Research areas: multi-agent systems, human–AI collaboration, philosophy of interaction, AI ethics and governance.
+- Paper "An Agentic Social Affordance Framework" published 2026/08 in an international peer-reviewed journal.
+- Several further journal and conference papers, including sensing design for long-term-care AI and VR metaverse applications.
+
+iOS Software Engineer | Jingqiao Information Co., Ltd. | 2015/11 – 2018/04
+- Developed flagship mobile apps for a special-municipality government (police reporting, local eco-tours);
+  responsible for API integration, large-scale system design and database interaction.
+
+Independent iOS Developer | Self-employed | 2015/05 – 2020/08
+- Independently designed, built and shipped several apps (Swift / Objective-C), including a game guide app,
+  an academic society app and AR interactive apps; collaborated with startups on a travel recommendation engine
+  and an e-wallet architecture.
+
+Remote Board-Game Digitalisation Consultant | Leyu Education Co., Ltd. | 2018/11 – 2019/11
+
+Patent Engineer | Hengyu International Patent & Trademark Office | 2014/05 – 2014/09
+- Clarified inventions through technical interviews and drafted patent specifications.
+
+EDUCATION
+Beidu University of Technology, Master's | 2019/09 – 2022/07
+Nanling International University, Bachelor's | 2008/09 – 2014/06
+
+CERTIFICATIONS AND AWARDS
+- Certified Digital Transformation Lecturer, central government ministry (2025)
+- First place, Blockchain Bootcamp Hackathon (Beidu Tech × Lianshi Academy)
+- Selected for "Defining the Future: Generative AI Showcase" open call (20 of 700 entries)
+
+COMMUNITY
+- Founding moderator of the AI Art and VR boards on a major online forum
+- First individual member, Virtual & Augmented Reality Industry Association
+- Technology columnist for a church periodical
+
+SKILLS
+Generative-AI adoption, prompt design, RAG and knowledge-base architecture, multi-agent systems,
+Stable Diffusion / ComfyUI, Swift / iOS development, Python, corporate training and teaching,
+English reading and writing

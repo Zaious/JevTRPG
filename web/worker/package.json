@@ -1,0 +1,15 @@
+{
+  "name": "jevtrpg-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "e2e": "node e2e/wiring.mjs && node e2e/flows.mjs && node e2e/save_image.mjs && node e2e/dropfile.mjs && node e2e/errors.mjs && node e2e/meta.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0",
+    "wrangler": "^4.137.0"
+  }
+}

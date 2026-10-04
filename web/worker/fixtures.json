@@ -1,0 +1,360 @@
+{
+ "build": {
+  "電腦使用": {
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.02,
+    "4": 0.98
+   },
+   "base": 5,
+   "expect": {
+    "value": 80,
+    "evidence": 1.0,
+    "split": false
+   }
+  },
+  "科學": {
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.03,
+    "2": 0.1,
+    "3": 0.44,
+    "4": 0.38
+   },
+   "base": 1,
+   "expect": {
+    "value": 61,
+    "evidence": 0.95,
+    "split": true
+   }
+  },
+  "機械維修": {
+   "probabilities": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0
+   },
+   "base": 10,
+   "expect": {
+    "value": 10,
+    "evidence": 0.0,
+    "split": false
+   }
+  },
+  "圖書館使用": {
+   "probabilities": {
+    "0": 0.12,
+    "1": 0.04,
+    "2": 0.03,
+    "3": 0.7,
+    "4": 0.11
+   },
+   "base": 20,
+   "expect": {
+    "value": 55,
+    "evidence": 0.88,
+    "split": false
+   }
+  },
+  "心理學": {
+   "probabilities": {
+    "0": 0.12,
+    "1": 0.44,
+    "2": 0.02,
+    "3": 0.42,
+    "4": 0.0
+   },
+   "base": 10,
+   "expect": {
+    "value": 36,
+    "evidence": 0.88,
+    "split": true
+   }
+  }
+ },
+ "check": {
+  "母語（中文）": {
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.01,
+    "2": 0.01,
+    "3": 0.28,
+    "4": 0.69
+   },
+   "expect": {
+    "ceiling": 83,
+    "verdict": "爭議",
+    "split": true
+   }
+  },
+  "圖書館使用": {
+   "probabilities": {
+    "0": 0.17,
+    "1": 0.44,
+    "2": 0.09,
+    "3": 0.23,
+    "4": 0.07
+   },
+   "expect": {
+    "ceiling": 44,
+    "verdict": "撐不起",
+    "split": false
+   }
+  },
+  "偵查": {
+   "probabilities": {
+    "0": 0.0,
+    "1": 0.1,
+    "2": 0.11,
+    "3": 0.67,
+    "4": 0.12
+   },
+   "expect": {
+    "ceiling": 66,
+    "verdict": "邊緣",
+    "split": false
+   }
+  },
+  "說服": {
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.3,
+    "2": 0.09,
+    "3": 0.5,
+    "4": 0.07
+   },
+   "expect": {
+    "ceiling": 56,
+    "verdict": "爭議",
+    "split": true
+   }
+  },
+  "話術": {
+   "probabilities": {
+    "0": 0.1,
+    "1": 0.3,
+    "2": 0.05,
+    "3": 0.53,
+    "4": 0.02
+   },
+   "expect": {
+    "ceiling": 52,
+    "verdict": "爭議",
+    "split": true
+   }
+  }
+ },
+ "sections": {
+  "zh": {
+   "text": "【角色】林書涵\n【背景故事】她是記者。\n【特性值】\nEDU 65　INT 70\n【技能】\n圖書館使用 70\n說服 65",
+   "expect": {
+    "state": {
+     "角色": "林書涵",
+     "背景": "她是記者。"
+    },
+    "chars": {
+     "EDU": 65,
+     "INT": 70
+    },
+    "claimed": {
+     "圖書館使用": 70,
+     "說服": 65
+    }
+   }
+  },
+  "en": {
+   "text": "[Character] Jane Doe\n[Backstory]\nShe is a reporter.\n[Stats]\nEdu: 65  Int: 70\n[Skills]\nLibrary Use: 70\nPersuade 65%",
+   "expect": {
+    "state": {
+     "角色": "Jane Doe",
+     "背景": "She is a reporter."
+    },
+    "chars": {
+     "EDU": 65,
+     "INT": 70
+    },
+    "claimed": {
+     "Library Use": 70,
+     "Persuade": 65
+    }
+   }
+  },
+  "ja": {
+   "text": "【キャラクター】山田花子\n【背景】記者をしている。\n【能力値】\nEDU 65　INT 70\n【スキル】\n図書館 70\n説得 65",
+   "expect": {
+    "state": {
+     "角色": "山田花子",
+     "背景": "記者をしている。"
+    },
+    "chars": {
+     "EDU": 65,
+     "INT": 70
+    },
+    "claimed": {
+     "図書館": 70,
+     "説得": 65
+    }
+   }
+  },
+  "longest_first": {
+   "text": "［Character］X\n【背景故事】甲\n[背景] 乙\n【Skills】\n心理學 50",
+   "expect": {
+    "state": {
+     "角色": "X",
+     "背景": "甲\n 乙"
+    },
+    "chars": {},
+    "claimed": {
+     "心理學": 50
+    }
+   }
+  },
+  "not_at_line_start": {
+   "text": "【技能】\nLanguage [Skills] 40\n外語（英文） 30",
+   "expect": {
+    "state": {
+     "角色": "",
+     "背景": ""
+    },
+    "chars": {},
+    "claimed": {
+     "Language [Skills]": 40,
+     "外語（英文）": 30
+    }
+   }
+  },
+  "no_sections": {
+   "text": "只是一段沒有任何標記的文字 70",
+   "expect": {
+    "state": {
+     "角色": "",
+     "背景": ""
+    },
+    "chars": {},
+    "claimed": {}
+   }
+  },
+  "alias_zh": {
+   "text": "【特性值】\nSTR 45　體質 60　SIZ 50　敏捷 65　幸運 50　EDU 65\n【技能】\n偵查 70\n",
+   "expect": {
+    "state": {
+     "角色": "",
+     "背景": ""
+    },
+    "chars": {
+     "STR": 45,
+     "CON": 60,
+     "SIZ": 50,
+     "DEX": 65,
+     "LUCK": 50,
+     "EDU": 65
+    },
+    "claimed": {
+     "偵查": 70
+    }
+   }
+  },
+  "alias_ja": {
+   "text": "【能力値】\n筋力 45　体力 60　体格 50　敏捷性 65　外見 60　知性 70　精神力 55　教育 65　幸運 50\n【スキル】\n目星 70\n",
+   "expect": {
+    "state": {
+     "角色": "",
+     "背景": ""
+    },
+    "chars": {
+     "STR": 45,
+     "CON": 60,
+     "SIZ": 50,
+     "DEX": 65,
+     "APP": 60,
+     "INT": 70,
+     "POW": 55,
+     "EDU": 65,
+     "LUCK": 50
+    },
+    "claimed": {
+     "目星": 70
+    }
+   }
+  },
+  "alias_en": {
+   "text": "[Stats]\nStrength 45  CON 60  Luck 50  luck 55  Education 65\n[Skills]\nSpot Hidden 70\n",
+   "expect": {
+    "state": {
+     "角色": "",
+     "背景": ""
+    },
+    "chars": {
+     "STR": 45,
+     "CON": 60,
+     "LUCK": 55,
+     "EDU": 65
+    },
+    "claimed": {
+     "Spot Hidden": 70
+    }
+   }
+  }
+ },
+ "formulas": {
+  "vars": {
+   "EDU": 65,
+   "INT": 70,
+   "DEX": 55,
+   "APP": 45,
+   "STR": 50
+  },
+  "cases": {
+   "EDU * 4": 260,
+   "INT * 2": 140,
+   "EDU * 2 + DEX * 2": 240,
+   "(EDU + INT) * 2": 270,
+   "EDU * 2 + APP * 2 - 10": 210,
+   "EDU*4": 260,
+   "-STR + 100": 50,
+   "EDU * 4 / 2": 130
+  }
+ },
+ "matching": {
+  "en": {
+   "Language (Other)": "外語",
+   "Language (Own)": "母語",
+   "Language (French)": "外語",
+   "Language": null,
+   "Library Use": "圖書館使用",
+   "Library Use (Research)": "圖書館使用",
+   "Drive Auto": "駕駛汽車",
+   "Drive": "駕駛汽車",
+   "Fighting (Brawl)": "鬥毆",
+   "Spot Hidden": "偵查",
+   "Computer Use": "電腦使用",
+   "Underwater Basket Weaving": null
+  },
+  "zh-Hant": {
+   "外語（英文）": "外語",
+   "外語": "外語",
+   "母語（中文）": "母語",
+   "母語": "母語",
+   "圖書館使用": "圖書館使用",
+   "圖書館": "圖書館使用",
+   "電腦": "電腦使用",
+   "偵查": "偵查",
+   "沒有這項技能": null
+  },
+  "ja": {
+   "運転（自動車）": "駕駛汽車",
+   "運転（バイク）": "駕駛汽車",
+   "運転": "駕駛汽車",
+   "図書館": "圖書館使用",
+   "母国語": "母語",
+   "外国語": "外語",
+   "近接戦闘（格闘）": "鬥毆",
+   "目星": "偵查",
+   "存在しない技能": null
+  }
+ }
+}

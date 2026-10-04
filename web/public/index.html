@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用 Jev 把履歷變成 TRPG 調查員角色卡｜JevTRPG</title>
+<meta name="description" content="貼上履歷，讓 TypeSafe 的判斷模型 Jev 讀出你在 d100 跑團規則裡的職業與技能值，印成一張 1920 年代風的調查員檔案。履歷不儲存、不記錄。">
+<meta property="og:title" content="用 Jev 把履歷變成一張 TRPG 調查員角色卡">
+<meta property="og:description" content="你的工作經歷在跑團規則裡值幾點？">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141a17">
+<link rel="canonical" href="https://jevtrpg.chroniclecore.com/">
+<meta property="og:url" content="https://jevtrpg.chroniclecore.com/">
+<meta property="og:site_name" content="JevTRPG">
+<meta property="og:image" content="https://jevtrpg.chroniclecore.com/og.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JevTRPG：把履歷變成一張 1920 年代調查員角色卡 | résumé to investigator sheet | 履歴書から探索者シート">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="用 Jev 把履歷變成 TRPG 調查員角色卡｜JevTRPG">
+<meta name="twitter:description" content="貼上履歷，讓 TypeSafe 的判斷模型 Jev 讀出你在 d100 跑團規則裡的職業與技能值，印成一張 1920 年代風的調查員檔案。履歷不儲存、不記錄。">
+<meta name="twitter:image" content="https://jevtrpg.chroniclecore.com/og.png?v=3">
+<link rel="alternate" hreflang="zh-Hant" href="./">
+<link rel="alternate" hreflang="ja" href="./?lang=ja">
+<link rel="alternate" hreflang="en" href="./?lang=en">
+<link rel="alternate" hreflang="x-default" href="./">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%23141a17%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 fill=%22%23e8ddc0%22%3Ed%25%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+  <a class="brand" href="./"><span class="brand-jev" data-i18n="brand">Jev</span><span class="brand-sheet" data-i18n="brandAccent">TRPG</span></a>
+  <nav class="tabs">
+    <a href="./" aria-current="page" data-i18n="navResume">履歷變角色卡</a>
+    <a href="character" data-i18n="navCharacter">角色技能檢查</a>
+  </nav>
+  <div class="langs" id="langs"></div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1 data-i18n="heroTitle">把你的履歷變成一張調查員角色卡</h1>
+      <p class="hero-sub" data-i18n="heroSub">貼上履歷，Jev 判讀你的職業與技能值。體質、外貌、幸運這些履歷上讀不出來的，照規矩擲骰。這是遊戲，不是能力評估。</p>
+      <p class="hero-alt"><a href="character" data-i18n="altToCharacter">已經有角色了？貼上背景與技能表，看 KP 會在哪幾項發問 →</a></p>
+    </div>
+
+    <!-- 首屏縮圖：範例履歷實際跑出來的結果（samples/*.json），點下去看全尺寸 -->
+    <figure class="preview">
+      <img class="tentacle t-a" src="art/tentacle-a.svg" alt="" width="449" height="336">
+      <a class="preview-frame" id="preview-open" href="#out" aria-labelledby="preview-cap">
+        <div class="preview-sheet" id="preview-sheet" aria-hidden="true"></div>
+      </a>
+      <figcaption id="preview-cap"><span data-i18n="previewCaption">範例履歷實際跑出來的卡。</span>
+        <span class="preview-more" data-i18n="previewOpen">看完整一張</span></figcaption>
+    </figure>
+
+    <div class="intake paper">
+      <label class="intake-label" for="text" data-i18n="inputLabel">履歷全文</label>
+      <textarea id="text" spellcheck="false" data-i18n-placeholder="resumePlaceholder"></textarea>
+      <div class="dropline">
+        <input type="file" id="file" accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" hidden>
+        <button id="pick" class="btn-text" type="button" data-i18n="pickFile">選擇檔案</button>
+        <span class="drop-hint" data-i18n="dropHint">也可以把 PDF、Word（.docx）或純文字檔拖進來。檔案只在你的瀏覽器裡讀，不會上傳。</span>
+        <span class="sheet-note" id="file-msg" role="status"></span>
+      </div>
+      <div class="mask">
+        <label class="mask-label" for="mask-terms" data-i18n="maskLabel">另外要遮掉的字詞（選填）</label>
+        <input id="mask-terms" class="mask-input" autocomplete="off" spellcheck="false" data-i18n-placeholder="maskPh">
+        <p class="mask-hint" data-i18n="maskHint">信箱、電話等會自動遮；姓名、公司、學校名稱抓不到，列在這裡（用逗號分開），送出前會在你的瀏覽器裡換成「[已遮]」。</p>
+        <p class="rv-line" id="rv-line" role="status"></p>
+        <button id="rv-toggle" class="btn-text" type="button" aria-expanded="false" aria-controls="rv-view" hidden></button>
+        <pre class="rv-view" id="rv-view" hidden></pre>
+      </div>
+      <div class="intake-row">
+        <button id="go" class="btn-stamp" type="button" data-i18n="resumeGo">產生角色卡</button>
+        <button id="sample" class="btn-text" type="button" data-i18n="resumeSample">放一份範例履歷</button>
+        <span class="count typed" id="count"></span>
+      </div>
+      <div id="turnstile-slot"></div>
+      <p class="ts-msg" id="ts-msg" role="alert" hidden></p>
+    </div>
+
+    <details class="privacy">
+      <summary><span data-i18n="privacyShortR">履歷不儲存。信箱、電話、身分證、地址、生日和你列出的字詞，會先在你的瀏覽器裡遮掉再送出。</span>
+        <span class="more" data-i18n="privacyMore">送去哪裡？</span></summary>
+      <p data-i18n="privacyBodyR">判讀交給 TypeSafe 的 Jev API，所以（遮完的）文字會離開你的瀏覽器：在一次請求裡走一趟就丟掉，不寫進任何地方。拖進來的檔案只在瀏覽器裡讀成文字，檔案本身不會上傳。不想送的段落請先自己刪掉。</p>
+    </details>
+  </section>
+
+
+  <section id="out" aria-live="polite"></section>
+  <div id="ad-results"></div>
+
+
+  <section class="memos">
+    <article class="memo paper">
+      <h2 data-i18n="howTitle">它怎麼判斷的</h2>
+      <p data-i18n-html="howBody">每一項技能問一題：「這份文件對這項能力交代到什麼程度」，分五級，從「完全沒提到」到「長期、專業程度的經歷」。模型回的是機率分布而不是單一答案，所以能分開看三件事：<strong>有沒有證據</strong>、<strong>有多強</strong>、<strong>它自己確不確定</strong>。兩種讀法打架時，卡上用紅筆圈出來，不硬給一個中間數字。</p>
+    </article>
+    <article class="memo paper">
+      <h2 data-i18n="jevTitle">關於 Jev</h2>
+      <p data-i18n-html="jevBody">這個站是<strong>以 Jev 為發想做出來的應用</strong>。Jev 是 TypeSafe 的「System One」判斷模型：它不寫文章、不解釋理由，只回答你事先定義好的選擇題、評分題與是非題，並附上一個校準過的機率。這裡每一項技能都是一題五級的評分題。一份履歷約 47 題一次問完，不到一秒。</p>
+      <p class="memo-links">
+        <a href="https://typesafe.ai" rel="noopener" data-i18n="linkTypesafe">TypeSafe Jev 官方</a>
+        <a href="https://github.com/Zaious/jev-capability-atlas" rel="noopener" data-i18n="linkAtlas">Jev 能力地圖：它在哪裡站得住、在哪裡站不住</a>
+      </p>
+    </article>
+    <p class="lang-note" id="content-lang-note" hidden></p>
+  </section>
+  <div id="ad-footer"></div>
+</main>
+
+<footer class="foot">
+  <nav class="foot-links" aria-label="Footer">
+    <a href="privacy" data-i18n="footLinkPrivacy">關於與隱私</a>
+    <a href="https://portaly.cc/chroniclecore/support" target="_blank" rel="noopener noreferrer" data-i18n="footSupport">支持作者</a>
+    <span data-i18n="footContact">聯絡：jevtrpg@chroniclecore.com</span>
+  </nav>
+  <p data-i18n="footCopy">© 2026 編年史記工作室 ChronicleCore. All rights reserved.</p>
+  <p data-i18n="footerLegal">非官方、非商業授權作品。技能名稱為 d100 系遊戲的通用術語，所有描述文字均為原創，與 Chaosium 無關，亦非任何遊戲的官方或相容產品。判讀使用 TypeSafe 的 Jev API，但本站是獨立應用，不是 TypeSafe 的產品。判讀由 AI 完成，可能出錯；這是遊戲，不是能力評估。</p>
+  <p class="foot-studio"><a href="https://studio.chroniclecore.com" target="_blank" rel="noopener" data-i18n="studioLine">編年史記工作室 ChronicleCore Studio 出品</a><span data-i18n="studioBy">作者：Zaious</span></p>
+</footer>
+
+<script>window.PAGE = "resume";</script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+{
+ "mode": "check",
+ "model": "jev-1.13.0",
+ "redacted": {},
+ "chars": {
+  "STR": 45,
+  "CON": 60,
+  "SIZ": 50,
+  "DEX": 65,
+  "APP": 60,
+  "INT": 70,
+  "POW": 55,
+  "EDU": 65,
+  "LUCK": 50
+ },
+ "derived": {
+  "HP": 11,
+  "MP": 11,
+  "SAN": 55
+ },
+ "budget": {
+  "interest": 140,
+  "occupation": 260
+ },
+ "spent": 533,
+ "skills": {
+  "母語（中文）": {
+   "level": 3.7,
+   "confidence": 0.75,
+   "evidence": 1,
+   "value": 84,
+   "ceiling": 84,
+   "top": [
+    4,
+    0.73
+   ],
+   "second": [
+    3,
+    0.26
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0.01,
+    "3": 0.26,
+    "4": 0.73
+   },
+   "claimed": 80,
+   "base": 0,
+   "known": true,
+   "verdict": "爭議"
+  },
+  "圖書館使用": {
+   "level": 2.3,
+   "confidence": 0.17,
+   "evidence": 0.96,
+   "value": 56,
+   "ceiling": 56,
+   "top": [
+    3,
+    0.4
+   ],
+   "second": [
+    1,
+    0.33
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.33,
+    "2": 0.08,
+    "3": 0.4,
+    "4": 0.15
+   },
+   "claimed": 70,
+   "base": 20,
+   "known": true,
+   "verdict": "爭議"
+  },
+  "偵查": {
+   "level": 3.01,
+   "confidence": 0.82,
+   "evidence": 1,
+   "value": 70,
+   "ceiling": 70,
+   "top": [
+    3,
+    0.83
+   ],
+   "second": [
+    4,
+    0.11
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0.04,
+    "2": 0.02,
+    "3": 0.83,
+    "4": 0.11
+   },
+   "claimed": 70,
+   "base": 25,
+   "known": true,
+   "verdict": "ok"
+  },
+  "說服": {
+   "level": 1.96,
+   "confidence": 0.14,
+   "evidence": 0.96,
+   "value": 50,
+   "ceiling": 50,
+   "top": [
+    1,
+    0.45
+   ],
+   "second": [
+    3,
+    0.45
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.45,
+    "2": 0.03,
+    "3": 0.45,
+    "4": 0.03
+   },
+   "claimed": 65,
+   "base": 10,
+   "known": true,
+   "verdict": "爭議"
+  },
+  "話術": {
+   "level": 1.18,
+   "confidence": 0.78,
+   "evidence": 0.96,
+   "value": 34,
+   "ceiling": 34,
+   "top": [
+    1,
+    0.84
+   ],
+   "second": [
+    3,
+    0.1
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.84,
+    "2": 0.02,
+    "3": 0.1,
+    "4": 0
+   },
+   "claimed": 60,
+   "base": 5,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "攀爬": {
+   "level": 2.63,
+   "confidence": 0.49,
+   "evidence": 0.99,
+   "value": 63,
+   "ceiling": 63,
+   "top": [
+    3,
+    0.58
+   ],
+   "second": [
+    1,
+    0.17
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.01,
+    "1": 0.17,
+    "2": 0.12,
+    "3": 0.58,
+    "4": 0.12
+   },
+   "claimed": 55,
+   "base": 20,
+   "known": true,
+   "verdict": "ok"
+  },
+  "駕駛汽車": {
+   "level": 3,
+   "confidence": 0.99,
+   "evidence": 1,
+   "value": 70,
+   "ceiling": 70,
+   "top": [
+    3,
+    0.99
+   ],
+   "second": [
+    4,
+    0.01
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0.99,
+    "4": 0.01
+   },
+   "claimed": 55,
+   "base": 20,
+   "known": true,
+   "verdict": "ok"
+  },
+  "鎖匠": {
+   "level": 1.41,
+   "confidence": 0.59,
+   "evidence": 0.96,
+   "value": 39,
+   "ceiling": 39,
+   "top": [
+    1,
+    0.55
+   ],
+   "second": [
+    2,
+    0.37
+   ],
+   "split": true,
+   "probabilities": {
+    "0": 0.04,
+    "1": 0.55,
+    "2": 0.37,
+    "3": 0.02,
+    "4": 0.02
+   },
+   "claimed": 50,
+   "base": 1,
+   "known": true,
+   "verdict": "爭議"
+  },
+  "電腦使用": {
+   "level": 0.14,
+   "confidence": 0.88,
+   "evidence": 0.13,
+   "value": 22,
+   "ceiling": 22,
+   "top": [
+    0,
+    0.87
+   ],
+   "second": [
+    1,
+    0.12
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.87,
+    "1": 0.12,
+    "2": 0,
+    "3": 0.01,
+    "4": 0
+   },
+   "claimed": 75,
+   "base": 5,
+   "known": true,
+   "verdict": "撐不起"
+  },
+  "醫學": {
+   "level": 0.1,
+   "confidence": 0.92,
+   "evidence": 0.09999999999999998,
+   "value": 21,
+   "ceiling": 21,
+   "top": [
+    0,
+    0.9
+   ],
+   "second": [
+    1,
+    0.1
+   ],
+   "split": false,
+   "probabilities": {
+    "0": 0.9,
+    "1": 0.1,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "claimed": 60,
+   "base": 1,
+   "known": true,
+   "verdict": "撐不起"
+  }
+ },
+ "character": "林書涵　28 歲　地方報社記者",
+ "systemTitle": "1920s／現代調查員（d100）",
+ "levels": [
+  "文件裡完全沒有任何跟這項能力有關的東西",
+  "提到相關的環境或接觸，但沒有說這個人會用",
+  "交代了學習或接觸這項能力的管道",
+  "交代了實際運用這項能力的經歷",
+  "交代了長期、專業程度的訓練或經歷"
+ ],
+ "locale": "zh-Hant"
+}

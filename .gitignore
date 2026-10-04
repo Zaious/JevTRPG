@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.env
+.env.local
+.dev.vars
+web/worker/.dev.vars
+node_modules/
+.wrangler/
+
+# benchmark outputs (real API responses); regenerate with experiments/*.py
+runs/*.json
+!runs/.gitkeep
+
+# deployment-specific: each deployment brings its own AdSense publisher declaration
+web/public/ads.txt
+
+# local scratch
+*.log

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.pdf binary
+*.docx binary
+*.doc binary
+*.png binary
+*.jpg binary
+*.bcmap binary
+*.mjs text eol=lf
